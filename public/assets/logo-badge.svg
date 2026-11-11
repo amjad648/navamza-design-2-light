@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 680" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient for preview canvas -->
+    <linearGradient id="bgPlate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+
+    <!-- App Icon Gradient -->
+    <linearGradient id="iconBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Neon Emblem Gradients -->
+    <linearGradient id="neonGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+
+    <linearGradient id="neonGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2DD4BF" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+
+    <!-- Glowing Aura -->
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="badgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#38BDF8" flood-opacity="0.18" />
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="600" height="680" rx="24" fill="url(#bgPlate)" />
+
+  <!-- Ambient Glow behind badge -->
+  <circle cx="300" cy="230" r="140" fill="#38BDF8" opacity="0.12" filter="url(#softGlow)" />
+
+  <!-- SQUIRCLE APP BADGE (Centered) -->
+  <g transform="translate(140, 70)" filter="url(#badgeShadow)">
+    <!-- Base Squircle -->
+    <rect width="320" height="320" rx="80" fill="url(#iconBg)" />
+    
+    <!-- Subtle glassmorphic inner border -->
+    <rect width="316" height="316" x="2" y="2" rx="78" fill="none" stroke="url(#neonGrad1)" stroke-width="2" opacity="0.4" />
+    <rect width="320" height="160" rx="80" fill="white" opacity="0.03" />
+
+    <!-- Radiant Monogram 'N' (Emblem) -->
+    <g transform="translate(68, 55)" filter="url(#softGlow)">
+      <!-- Left Stem -->
+      <path d="M 12 185 L 12 40 C 12 28 22 20 34 26 L 46 32 C 54 36 60 44 60 54 L 60 185 C 60 197 46 204 36 198 L 22 192 C 16 188 12 182 12 176 Z" fill="url(#neonGrad1)" />
+
+      <!-- Diagonal Slash -->
+      <path d="M 48 38 L 138 168 C 146 180 162 180 168 168 L 174 158 C 180 148 178 136 170 126 L 86 16 C 80 8 68 8 62 16 Z" fill="url(#neonGrad2)" opacity="0.95" />
+
+      <!-- Right Stem -->
+      <path d="M 128 185 L 128 40 C 128 28 138 20 150 26 L 162 32 C 170 36 176 44 176 54 L 176 185 C 176 197 162 204 152 198 L 138 192 C 132 188 128 182 128 176 Z" fill="url(#neonGrad1)" />
+
+      <!-- Vertex Dot (Digital Pulse) -->
+      <circle cx="174" cy="30" r="10" fill="#38BDF8" />
+    </g>
+  </g>
+
+  <!-- BRAND NAME 'Navamza' IN THE BOTTOM -->
+  <!-- Main Title -->
+  <text x="300" y="495" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="52" font-weight="800" letter-spacing="3" fill="url(#textGrad)">
+    Navamza
+  </text>
+
+  <!-- Tagline underneath -->
+  <text x="300" y="535" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" letter-spacing="6" fill="#38BDF8">
+    MOBILE &amp; WEB PRODUCTS
+  </text>
+
+  <!-- Minimal Decorative separator line -->
+  <line x1="240" y1="565" x2="360" y2="565" stroke="#334155" stroke-width="1.5" stroke-linecap="round" />
+
+  <!-- URL Subtext -->
+  <text x="300" y="600" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" letter-spacing="2" fill="#64748B">
+    NAVAMZA.COM
+  </text>
+</svg>

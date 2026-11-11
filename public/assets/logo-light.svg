@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" width="100%" height="100%">
+  <defs>
+    <linearGradient id="navLightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#2563EB" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Clean Minimalist Isometric Emblem -->
+  <g transform="translate(6, 8)" filter="url(#softShadow)">
+    <rect width="48" height="48" rx="12" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.5" />
+    
+    <!-- Modern 'N' Tech Mark -->
+    <path d="M 17 37 L 17 15 L 31 37 L 31 15" fill="none" stroke="url(#navLightGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Subtle blue vertex dot -->
+    <circle cx="31" cy="15" r="2.5" fill="#0284C7" />
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="68" y="38" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" letter-spacing="-0.5" fill="#0F172A">
+    Navamza<tspan fill="#2563EB">.</tspan>
+  </text>
+  <text x="70" y="51" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" letter-spacing="2.5" fill="#64748B">
+    MOBILE &amp; WEB LABS
+  </text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="prism1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="prism2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+    <linearGradient id="prism3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#818CF8" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Left Stem of N -->
+  <path d="M 24 94 L 24 26 C 24 22 28 19 32 21 L 46 29 C 48 30 50 33 50 36 L 50 94 C 50 98 44 101 40 98 L 27 90 C 25 89 24 86 24 84 Z" fill="url(#prism1)" />
+
+  <!-- Diagonal of N -->
+  <path d="M 44 26 L 86 86 C 88 89 92 90 95 88 L 108 79 C 111 77 111 72 108 70 L 64 16 C 62 13 58 12 55 14 L 42 22 C 40 23 42 27 44 26 Z" fill="url(#prism2)" opacity="0.95" />
+
+  <!-- Right Stem of N -->
+  <path d="M 88 26 L 88 94 C 88 98 92 101 96 99 L 110 91 C 112 90 114 87 114 84 L 114 26 C 114 22 108 19 104 21 L 91 30 C 89 31 88 34 88 36 Z" fill="url(#prism3)" />
+
+  <!-- Glowing Accent Node -->
+  <circle cx="86" cy="22" r="5" fill="#38BDF8" filter="url(#glow)" />
+
+  <!-- Brand Typography -->
+  <text x="145" y="74" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.5" fill="#0F172A">
+    NAVAMZA
+  </text>
+  <text x="148" y="96" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" letter-spacing="4" fill="#64748B">
+    DIGITAL PRODUCTS &amp; LABS
+  </text>
+</svg>
